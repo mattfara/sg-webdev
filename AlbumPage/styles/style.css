@@ -1,3 +1,12 @@
-/*This external css file will focus on the Tracks table*/
+body {margin: 0 auto;}
 
-p.members {font-family: Courier}
+.members {
+    font-style: italic;
+    }
+#cover {
+    background: url('../images/rtl-album-cover.jpg') no-repeat;
+    height: 20em;
+}
+
+.highlight {font-family: "Metamorphous", cursive;}
+
