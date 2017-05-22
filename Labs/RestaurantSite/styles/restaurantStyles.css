@@ -1,2 +1,7 @@
 header {margin:100px auto;}
 footer {margin: 20px auto;}
+.banner {font-family: 'Kumar One', cursive;}
+.foodName {font-size: 120%;}
+#menu {background-color: red;}
+.content {background-color: yellow;}
+#fullName, #customerEmail, #customerPhone, #reason {font-weight: bold;}
