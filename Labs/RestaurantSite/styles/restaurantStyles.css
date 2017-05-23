@@ -1,7 +1,32 @@
 header {margin:100px auto;}
 footer {margin: 20px auto;}
 .banner {font-family: 'Kumar One', cursive;}
-.foodName {font-size: 120%;}
+th {font-size: 120%;}
+td {color: white;}
 #menu {background-color: red;}
 .content {background-color: yellow;}
 #fullName, #customerEmail, #customerPhone, #reason {font-weight: bold;}
+#beverages{
+    margin: 40px;
+    padding: 20px;
+    background: blue;
+    }
+
+
+
+/*
+#beverages th, #beverages td {
+    background: blue;
+    
+    }
+*/
+
+/*link behavior*/
+a:link{color:purple;}
+a:visited{color: orange;}
+a:hover{font-weight: bold;}
+a:active{text-decoration:none;}
+
+
+/*revisit ordering of link calls....*/
+
