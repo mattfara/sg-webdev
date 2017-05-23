@@ -10,3 +10,12 @@ body {margin: 0 auto;}
 
 .highlight {font-family: "Metamorphous", cursive;}
 
+a:hover {
+    text-decoration: underline;
+    background: green;
+    }
+a:active,a:link, a:visited {text-decoration: none;}
+
+td {font-style: italic;}
+
+table, th, td {background: lawngreen;}
