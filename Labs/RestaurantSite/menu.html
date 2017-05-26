@@ -1,28 +1,59 @@
+<!-- 
+Restaurant site V5 notes
+1. adding bootstrap by using link to file in my computer
+
+
+
+-->
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Menu</title>
+    <link rel="stylesheet" href="/media/matt/repos/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    
+    <!-- commenting out original css stylesheet to better see impact of bootstrap
     <link href="styles/restaurantStyles.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Kumar+One" rel="stylesheet">
-
+    -->
+    
+    <!-- blocked out for bootstrap testing
     <style>
          {font-family: Georgia;}
         table {border: 1px solid red;}
     </style>
+-->
 </head>
 
 
 <body>
+    <div class="container-fluid"
     <header>
-    <h1 class="banner">City Shop</h1>
-    <nav> 
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="contact.html">Contact Us</a>
+    <h1 class="banner">NightHawks</h1>
+    
+    <!--using bootstrap to use tabs/pills and adding a jumbotron-->
+    <!--found navs.less - gonna try .nav-tabs -->
+    
+    <nav class="navbar navbar-inverse">  
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html"> NightHawks </a>
+        </div>
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html"> <span class="glyphicon glyphicon-home"> Home </span></a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="jumbotron">
+            <h1>New location coming June 2nd</h1>
+            <p>one block from the Empire State Building</p>
+        </div>
     </nav>
+    
+    
     </header>
-    <div>
-<table id="menu">
+    <div class="container-fluid">
+<table id="menu" class="table">
     <tr>
         <th class="foodName">Burger and Fries</th>
         <th class="foodName">Hot Dog and Chips</th>
@@ -76,9 +107,12 @@
             </tbody>
         </table>
     </div>
+    <hr>
 <footer>
     6th and Broadway, New York, NY, 10001<br>
     212 555 5555
 </footer>        
+</div>
 </body>
+
 </html>
