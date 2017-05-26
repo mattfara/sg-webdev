@@ -1,0 +1,83 @@
+<!--bootstrap getting started
+0. linked to bootstrap using <link> url found on w3c schools; not sure which file to link to in downloaded folders
+1. i wrapped the html tag within a div.XXX surrounds all content within the body tag
+2. gave div the class "container-fluid"
+3. gave table tag class "table-responsive" and used inline to make its width 100%, that way I can see table respond to browser size changes
+4. commented my original css file and the below <style> out to avoid conflicts and see bootstrap unadulterated
+5. re-instated the img file in the html so the bootstrap file could affect it
+6. added the "img-circle" class to the <img> tag
+7. added the "table-striped" class to <table>
+
+for adding it in the first place, i think the minified file is used (for improving load time). The link that works 
+below uses the simple bootstrap.min.css file, which I can find in my downloaded version here:
+/media/matt/repos/node_modules/bootstrap/dist/css/bootstrap.min.css
+
+But I wonder why I'd want to fill my hard drive with all this if the CDN is available.... customization?'
+  -->
+
+
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <title>Album Page</title>
+    <!--
+    <style>
+      table, th, td {border: 1px solid black;}
+      caption {font-weight:900t54r;}
+    </style>
+    -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- trying bootstrap instead of my custom css now
+    <link href='styles/style.css' rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Metamorphous" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container-fluid">
+    <div id="cover" >
+      <img class="img-circle" src="images/rtl-album-cover.jpg" alt="album cover of Ride the Lightning">
+    </div>
+    <div>
+  	<h1 class="highlight">Ride the Lightning</h1> 
+  	<h2><a id="site" href="https://metallica.com/" title="to their page">Metallica</a></h2>
+    <h3>1980-something</h3>
+    <h2 class="highlight">Band Members and Producers</h2>
+      <p><span class="members"style="font-weight:bolder;">James Hetfield</span> - vox, rhythm guitar</p>
+      <p><span class="members">Kirk Hammet</span> - lead guitar</p>
+      <p><span class="members">Cliff-something</span> - bass</p>
+      <p><span class="members">Lars Ulrich</span> - drums</p>
+      <p><span class="members">Producer</p>
+    </div>
+
+      <table class="table-responsive table-striped" style="width:100%;">
+        <thead>
+          <caption>Tracks</caption>
+          <tr>
+            <th>Track #</th>
+            <th>Track Title</th>
+            <th>Track Length</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Fight Fire with Fire</td>
+            <td>4:45</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Ride the Lightning</td>
+            <td>6:36</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>For Whom the Bell Tolls</td>
+            <td>5:09</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+  </body>
+</html>
+
+
